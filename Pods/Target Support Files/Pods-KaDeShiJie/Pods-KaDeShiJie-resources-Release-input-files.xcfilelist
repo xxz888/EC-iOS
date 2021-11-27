@@ -1,0 +1,14 @@
+${PODS_ROOT}/Target Support Files/Pods-KaDeShiJie/Pods-KaDeShiJie-resources.sh
+${PODS_ROOT}/BRPickerView/BRPickerView/Base/BRPickerView.bundle
+${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle
+${PODS_ROOT}/Meiqia/Meiqia-SDK-files/MQChatViewController/Assets/MQChatViewAsset.bundle
+${PODS_ROOT}/../OEMSDK/TXAuth/LivenessBundle.bundle
+${PODS_ROOT}/../OEMSDK/TXAuth/ULSFaceTrackerAssets.bundle
+${PODS_ROOT}/../OEMSDK/TXAuth/ULSGPUAssets.bin
+${PODS_ROOT}/../OEMSDK/TXAuth/face_shape.ref
+${PODS_CONFIGURATION_BUILD_DIR}/OEMSDK/OEMSDK.bundle
+${PODS_ROOT}/PGDatePicker/PGDatePicker/PGDatePicker.bundle
+${PODS_CONFIGURATION_BUILD_DIR}/QMUIKit/QMUIResources.bundle
+${PODS_ROOT}/SGQRCode/SGQRCode/SGQRCode.bundle
+${PODS_ROOT}/UMCShare/UMShare/UMSocialUI/UMSocialSDKResources.bundle
+${PODS_ROOT}/ZZCircleProgress/ZZCircleProgressDemo/ZZCircleProgress/ZZCircleProgress.bundle

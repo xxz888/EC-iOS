@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="share" id="KGk-i7-Jjw" customClass="KDShareViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGY-tZ-7rd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_share_bottom_1" translatesAutoresizingMaskIntoConstraints="NO" id="441-oW-YBx">
+                                <rect key="frame" x="17" y="12" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="OdZ-HF-tgV"/>
+                                    <constraint firstAttribute="height" constant="20" id="RGY-Q3-wlg"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="官方社群微信号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mb0-Ie-k18">
+                                <rect key="frame" x="44" y="15" width="86" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提供推广培训及引导" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hS-jf-gSp">
+                                <rect key="frame" x="138" y="16" width="92" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" red="0.65098039220000004" green="0.65098039220000004" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_share_more" translatesAutoresizingMaskIntoConstraints="NO" id="rCq-Mq-E9s">
+                                <rect key="frame" x="294" y="15.5" width="7" height="13"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ke-hI-0qm">
+                                <rect key="frame" x="9" y="43" width="302" height="1"/>
+                                <color key="backgroundColor" red="0.91372549020000005" green="0.91372549020000005" blue="0.91372549020000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="fH2-Rr-nJn"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="rCq-Mq-E9s" secondAttribute="trailing" constant="19" id="43b-yh-7OR"/>
+                            <constraint firstItem="Mb0-Ie-k18" firstAttribute="centerY" secondItem="bGY-tZ-7rd" secondAttribute="centerY" id="AKP-t4-htb"/>
+                            <constraint firstItem="6hS-jf-gSp" firstAttribute="centerY" secondItem="bGY-tZ-7rd" secondAttribute="centerY" id="CDD-JV-2qh"/>
+                            <constraint firstAttribute="trailing" secondItem="6Ke-hI-0qm" secondAttribute="trailing" constant="9" id="DKy-zi-Nre"/>
+                            <constraint firstItem="6Ke-hI-0qm" firstAttribute="leading" secondItem="bGY-tZ-7rd" secondAttribute="leading" constant="9" id="EBI-YC-fcW"/>
+                            <constraint firstItem="6hS-jf-gSp" firstAttribute="leading" secondItem="Mb0-Ie-k18" secondAttribute="trailing" constant="8" id="NA3-As-ebe"/>
+                            <constraint firstAttribute="bottom" secondItem="6Ke-hI-0qm" secondAttribute="bottom" id="giQ-N8-DQa"/>
+                            <constraint firstItem="441-oW-YBx" firstAttribute="leading" secondItem="bGY-tZ-7rd" secondAttribute="leading" constant="17" id="le6-R1-8Km"/>
+                            <constraint firstItem="Mb0-Ie-k18" firstAttribute="leading" secondItem="441-oW-YBx" secondAttribute="trailing" constant="7" id="ley-h5-9ti"/>
+                            <constraint firstItem="441-oW-YBx" firstAttribute="centerY" secondItem="bGY-tZ-7rd" secondAttribute="centerY" id="ras-Nf-fEi"/>
+                            <constraint firstItem="rCq-Mq-E9s" firstAttribute="centerY" secondItem="bGY-tZ-7rd" secondAttribute="centerY" id="vRK-wJ-U3U"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="bGY-tZ-7rd" secondAttribute="trailing" id="3e7-WA-cWc"/>
+                    <constraint firstItem="bGY-tZ-7rd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="SPX-fs-fri"/>
+                    <constraint firstAttribute="bottom" secondItem="bGY-tZ-7rd" secondAttribute="bottom" id="UQf-CM-NdM"/>
+                    <constraint firstItem="bGY-tZ-7rd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xTt-Pj-XJk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="desView" destination="6hS-jf-gSp" id="JqJ-6M-Aqt"/>
+                <outlet property="iconView" destination="441-oW-YBx" id="0Sq-Jj-CMP"/>
+                <outlet property="lineView" destination="6Ke-hI-0qm" id="R2f-k2-JMF"/>
+                <outlet property="titleView" destination="Mb0-Ie-k18" id="bkH-Xq-lmm"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kd_share_bottom_1" width="20" height="20"/>
+        <image name="kd_share_more" width="7" height="13"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

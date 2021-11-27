@@ -1,0 +1,1 @@
+../../../../OEMSDK/Classes/Module/Collection/NP/MCChannelRateModel.h

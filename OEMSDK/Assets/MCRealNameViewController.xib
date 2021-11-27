@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCRealNameViewController">
+            <connections>
+                <outlet property="tableView" destination="jIY-7q-aQR" id="FTP-dK-Xhp"/>
+                <outlet property="topView" destination="JR3-Eq-du3" id="GCl-z0-wOw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mc_realname_top" translatesAutoresizingMaskIntoConstraints="NO" id="wVq-s5-ANt">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JR3-Eq-du3">
+                    <rect key="frame" x="15" y="180" width="290" height="40"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lineImg" translatesAutoresizingMaskIntoConstraints="NO" id="rcS-eA-KhS">
+                            <rect key="frame" x="20" y="12.5" width="2" height="15"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择审核方式" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HWi-gz-cOl">
+                            <rect key="frame" x="32" y="11.5" width="100" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="HWi-gz-cOl" firstAttribute="leading" secondItem="rcS-eA-KhS" secondAttribute="trailing" constant="10" id="38b-La-GnI"/>
+                        <constraint firstAttribute="height" constant="40" id="HpN-iV-stR"/>
+                        <constraint firstItem="rcS-eA-KhS" firstAttribute="centerY" secondItem="JR3-Eq-du3" secondAttribute="centerY" id="bRL-Eu-5tS"/>
+                        <constraint firstItem="rcS-eA-KhS" firstAttribute="leading" secondItem="JR3-Eq-du3" secondAttribute="leading" constant="20" id="hGI-vh-P6G"/>
+                        <constraint firstItem="HWi-gz-cOl" firstAttribute="centerY" secondItem="JR3-Eq-du3" secondAttribute="centerY" id="tx3-R2-VNf"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jIY-7q-aQR">
+                    <rect key="frame" x="0.0" y="220" width="320" height="348"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8kQ-sB-eHS"/>
+                        <outlet property="delegate" destination="-1" id="GrH-ao-t32"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="srN-a4-vc0">
+                    <rect key="frame" x="0.0" y="30" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Zou-9J-anD"/>
+                        <constraint firstAttribute="width" secondItem="srN-a4-vc0" secondAttribute="height" id="nHJ-U2-GzX"/>
+                    </constraints>
+                    <state key="normal" image="nav_left_white"/>
+                    <connections>
+                        <action selector="leftBack:" destination="-1" eventType="touchUpInside" id="u3d-kd-4nu"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jIY-7q-aQR" secondAttribute="trailing" id="4VY-LD-dvq"/>
+                <constraint firstItem="jIY-7q-aQR" firstAttribute="top" secondItem="JR3-Eq-du3" secondAttribute="bottom" id="8hE-E5-jbm"/>
+                <constraint firstItem="srN-a4-vc0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="30" id="AJP-nw-hfb">
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="widthScreen" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </constraint>
+                <constraint firstItem="srN-a4-vc0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Bbh-CK-9fZ"/>
+                <constraint firstAttribute="trailing" secondItem="wVq-s5-ANt" secondAttribute="trailing" id="OIV-VS-QTd"/>
+                <constraint firstItem="wVq-s5-ANt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pef-lo-b2F"/>
+                <constraint firstItem="wVq-s5-ANt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TBT-SQ-EWB"/>
+                <constraint firstItem="JR3-Eq-du3" firstAttribute="centerY" secondItem="wVq-s5-ANt" secondAttribute="bottom" id="VBh-fT-QcK"/>
+                <constraint firstAttribute="bottom" secondItem="jIY-7q-aQR" secondAttribute="bottom" id="fSw-VX-wTH"/>
+                <constraint firstItem="jIY-7q-aQR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jao-IB-oC0"/>
+                <constraint firstAttribute="trailing" secondItem="JR3-Eq-du3" secondAttribute="trailing" constant="15" id="qFg-ql-awA"/>
+                <constraint firstItem="JR3-Eq-du3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="t3I-HL-Hmt"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="136.60714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="lineImg" width="2" height="15"/>
+        <image name="mc_realname_top" width="375" height="200"/>
+        <image name="nav_left_white" width="18" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

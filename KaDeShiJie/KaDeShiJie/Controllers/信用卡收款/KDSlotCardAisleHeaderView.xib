@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KDSlotCardAisleHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_gather_top" translatesAutoresizingMaskIntoConstraints="NO" id="yeX-pd-nCM">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="Vgl-gI-cQj"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信用卡刷卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UfP-IU-1dS">
+                    <rect key="frame" x="35" y="69" width="92" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10000.00元" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUf-z3-WtR">
+                    <rect key="frame" x="283" y="69" width="96" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="选择刷卡通道" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uYV-nD-evT">
+                    <rect key="frame" x="26" y="135.5" width="74" height="14.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="yeX-pd-nCM" firstAttribute="bottom" secondItem="uYV-nD-evT" secondAttribute="bottom" constant="10" id="19L-ru-8WM"/>
+                <constraint firstItem="yeX-pd-nCM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5eN-0n-Fy2"/>
+                <constraint firstItem="UfP-IU-1dS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="TS7-Ib-fI8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uUf-z3-WtR" secondAttribute="trailing" constant="35" id="lNl-ti-484"/>
+                <constraint firstItem="uYV-nD-evT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="26" id="o62-0x-Kb8"/>
+                <constraint firstItem="yeX-pd-nCM" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="puQ-wO-efo"/>
+                <constraint firstItem="UfP-IU-1dS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="syX-0X-EVc"/>
+                <constraint firstItem="uUf-z3-WtR" firstAttribute="centerY" secondItem="UfP-IU-1dS" secondAttribute="centerY" id="v70-GU-7MN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="yeX-pd-nCM" secondAttribute="trailing" id="zhh-Wd-mNf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="moneyView" destination="uUf-z3-WtR" id="Did-PX-fxJ"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-103.125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kd_gather_top" width="375" height="201.5"/>
+    </resources>
+</document>

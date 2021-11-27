@@ -1,0 +1,1 @@
+../../../../OEMSDK/Classes/Component/Models/MCBrandInfo.h

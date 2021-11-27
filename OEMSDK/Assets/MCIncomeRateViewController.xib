@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MCIncomeRateViewController">
+            <connections>
+                <outlet property="firstLabelView" destination="5vE-pe-fqD" id="O8m-tq-wJ8"/>
+                <outlet property="firstMoneyView" destination="lgr-B9-j3d" id="alM-WH-aPN"/>
+                <outlet property="secondLabelView" destination="uAD-f5-wta" id="6QI-FO-rRB"/>
+                <outlet property="secondMoneyView" destination="yCu-Kn-ypj" id="Wra-4q-YE9"/>
+                <outlet property="tableView" destination="WCL-lN-Qoj" id="tQB-PP-dQm"/>
+                <outlet property="thirdLabelView" destination="Bdz-am-39d" id="oGW-w0-8tQ"/>
+                <outlet property="thirdMoneyView" destination="2HE-1B-veO" id="r1i-Le-2Gg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="FZZ-Mt-aTL">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="287"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DVs-0X-RY9">
+                            <rect key="frame" x="0.0" y="0.0" width="138" height="287"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incomeRate_bg_2" translatesAutoresizingMaskIntoConstraints="NO" id="fIp-yo-CLQ">
+                                    <rect key="frame" x="40" y="136" width="58" height="76"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="58" id="3o6-07-RoC"/>
+                                        <constraint firstAttribute="height" constant="76" id="lgz-GU-kkZ"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incomeRate_bg_center" translatesAutoresizingMaskIntoConstraints="NO" id="Bn7-A9-m6x">
+                                    <rect key="frame" x="52.5" y="168" width="33" height="33"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uAD-f5-wta">
+                                    <rect key="frame" x="0.0" y="221" width="138" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="dEl-X1-tLP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yCu-Kn-ypj" customClass="QMUIButton">
+                                    <rect key="frame" x="0.0" y="249" width="138" height="22"/>
+                                    <state key="normal" title="0.00" image="incomeRate_bg_coin"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="8.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Bn7-A9-m6x" firstAttribute="top" secondItem="fIp-yo-CLQ" secondAttribute="top" constant="32" id="0cY-f5-WEt"/>
+                                <constraint firstItem="yCu-Kn-ypj" firstAttribute="leading" secondItem="DVs-0X-RY9" secondAttribute="leading" id="4ZU-KM-PO9"/>
+                                <constraint firstItem="uAD-f5-wta" firstAttribute="centerX" secondItem="DVs-0X-RY9" secondAttribute="centerX" id="5ZB-fY-jf5"/>
+                                <constraint firstItem="uAD-f5-wta" firstAttribute="leading" secondItem="DVs-0X-RY9" secondAttribute="leading" id="Ao0-Nf-52L"/>
+                                <constraint firstItem="yCu-Kn-ypj" firstAttribute="centerX" secondItem="DVs-0X-RY9" secondAttribute="centerX" id="T7f-Id-QZQ"/>
+                                <constraint firstItem="uAD-f5-wta" firstAttribute="top" secondItem="fIp-yo-CLQ" secondAttribute="bottom" constant="9" id="XX2-Fw-M7H"/>
+                                <constraint firstItem="Bn7-A9-m6x" firstAttribute="centerX" secondItem="DVs-0X-RY9" secondAttribute="centerX" id="Ycb-SV-vSe"/>
+                                <constraint firstItem="fIp-yo-CLQ" firstAttribute="top" secondItem="DVs-0X-RY9" secondAttribute="top" constant="136" id="ZCC-6M-8gy"/>
+                                <constraint firstItem="yCu-Kn-ypj" firstAttribute="top" secondItem="uAD-f5-wta" secondAttribute="bottom" constant="12" id="pXc-0o-Zbj"/>
+                                <constraint firstItem="fIp-yo-CLQ" firstAttribute="centerX" secondItem="DVs-0X-RY9" secondAttribute="centerX" id="ssm-9V-8PQ"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4K-9m-B5I">
+                            <rect key="frame" x="138" y="0.0" width="138" height="287"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incomeRate_bg_0" translatesAutoresizingMaskIntoConstraints="NO" id="O9c-j6-grh">
+                                    <rect key="frame" x="22" y="71" width="94" height="117"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="117" id="JSU-U8-KXi"/>
+                                        <constraint firstAttribute="width" constant="94" id="jc5-a5-7ts"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incomeRate_bg_center" translatesAutoresizingMaskIntoConstraints="NO" id="YaL-je-Ckt">
+                                    <rect key="frame" x="39" y="111" width="60" height="60"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="60" id="M9Q-3c-tsV"/>
+                                        <constraint firstAttribute="width" constant="60" id="Qvn-3A-RwL"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5vE-pe-fqD">
+                                    <rect key="frame" x="0.0" y="195" width="138" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="lLP-d4-NBo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgr-B9-j3d" customClass="QMUIButton">
+                                    <rect key="frame" x="0.0" y="229" width="138" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="Evq-jt-pvj"/>
+                                    </constraints>
+                                    <state key="normal" title="0.00" image="incomeRate_bg_coin"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="8.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="YaL-je-Ckt" firstAttribute="centerX" secondItem="a4K-9m-B5I" secondAttribute="centerX" id="5uH-Hj-3sP"/>
+                                <constraint firstItem="lgr-B9-j3d" firstAttribute="leading" secondItem="a4K-9m-B5I" secondAttribute="leading" id="8ZP-Pf-Fbv"/>
+                                <constraint firstItem="5vE-pe-fqD" firstAttribute="leading" secondItem="a4K-9m-B5I" secondAttribute="leading" id="GmK-KT-GHN"/>
+                                <constraint firstItem="5vE-pe-fqD" firstAttribute="top" secondItem="O9c-j6-grh" secondAttribute="bottom" constant="7" id="GpQ-op-rGE"/>
+                                <constraint firstItem="O9c-j6-grh" firstAttribute="top" secondItem="a4K-9m-B5I" secondAttribute="top" constant="71" id="MgQ-r8-uQN"/>
+                                <constraint firstItem="O9c-j6-grh" firstAttribute="centerX" secondItem="a4K-9m-B5I" secondAttribute="centerX" id="dp0-hY-A0S"/>
+                                <constraint firstItem="lgr-B9-j3d" firstAttribute="centerX" secondItem="a4K-9m-B5I" secondAttribute="centerX" id="fdC-tf-Hoc"/>
+                                <constraint firstItem="5vE-pe-fqD" firstAttribute="centerX" secondItem="a4K-9m-B5I" secondAttribute="centerX" id="kMw-0n-yo4"/>
+                                <constraint firstItem="YaL-je-Ckt" firstAttribute="top" secondItem="O9c-j6-grh" secondAttribute="top" constant="40" id="vuS-34-eJ3"/>
+                                <constraint firstItem="lgr-B9-j3d" firstAttribute="top" secondItem="5vE-pe-fqD" secondAttribute="bottom" constant="14" id="y3z-QL-sFn"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzQ-fK-9zr">
+                            <rect key="frame" x="276" y="0.0" width="138" height="287"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incomeRate_bg_1" translatesAutoresizingMaskIntoConstraints="NO" id="SyP-cs-JBy">
+                                    <rect key="frame" x="40" y="136" width="58" height="76"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="76" id="9Ya-dk-sIe"/>
+                                        <constraint firstAttribute="width" constant="58" id="liX-nb-eEk"/>
+                                    </constraints>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="incomeRate_bg_center" translatesAutoresizingMaskIntoConstraints="NO" id="ad7-7b-Koh">
+                                    <rect key="frame" x="52.5" y="168" width="33" height="33"/>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bdz-am-39d">
+                                    <rect key="frame" x="0.0" y="221" width="138" height="16"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="16" id="qUm-tZ-P3L"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2HE-1B-veO" customClass="QMUIButton">
+                                    <rect key="frame" x="0.0" y="249" width="138" height="22"/>
+                                    <state key="normal" title="0.00" image="incomeRate_bg_coin"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="8.5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="2HE-1B-veO" firstAttribute="leading" secondItem="LzQ-fK-9zr" secondAttribute="leading" id="9lH-qI-oSH"/>
+                                <constraint firstItem="SyP-cs-JBy" firstAttribute="centerX" secondItem="LzQ-fK-9zr" secondAttribute="centerX" id="JC0-N2-sLF"/>
+                                <constraint firstItem="ad7-7b-Koh" firstAttribute="centerX" secondItem="LzQ-fK-9zr" secondAttribute="centerX" id="R9B-Ut-P34"/>
+                                <constraint firstItem="Bdz-am-39d" firstAttribute="top" secondItem="SyP-cs-JBy" secondAttribute="bottom" constant="9" id="RQU-zS-H7S"/>
+                                <constraint firstItem="ad7-7b-Koh" firstAttribute="top" secondItem="SyP-cs-JBy" secondAttribute="top" constant="32" id="VGs-6m-7LI"/>
+                                <constraint firstItem="2HE-1B-veO" firstAttribute="top" secondItem="Bdz-am-39d" secondAttribute="bottom" constant="12" id="VXI-bV-tsW"/>
+                                <constraint firstItem="Bdz-am-39d" firstAttribute="centerX" secondItem="LzQ-fK-9zr" secondAttribute="centerX" id="hCa-G5-ynw"/>
+                                <constraint firstItem="SyP-cs-JBy" firstAttribute="top" secondItem="LzQ-fK-9zr" secondAttribute="top" constant="136" id="iip-UZ-laS"/>
+                                <constraint firstItem="Bdz-am-39d" firstAttribute="leading" secondItem="LzQ-fK-9zr" secondAttribute="leading" id="wSW-9V-Com"/>
+                                <constraint firstItem="2HE-1B-veO" firstAttribute="centerX" secondItem="LzQ-fK-9zr" secondAttribute="centerX" id="z0d-q1-Py0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="287" id="f7u-R4-VBm"/>
+                    </constraints>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="60" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WCL-lN-Qoj">
+                    <rect key="frame" x="8" y="287" width="398" height="609"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Ao7-rm-yJd"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dzo-4k-dhu">
+                    <rect key="frame" x="0.0" y="44" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="Dzo-4k-dhu" secondAttribute="height" id="8Ih-h9-bnv"/>
+                        <constraint firstAttribute="width" constant="50" id="zMP-gB-Zuh"/>
+                    </constraints>
+                    <state key="normal" image="nav_left_white"/>
+                    <connections>
+                        <action selector="onBackTouched:" destination="-1" eventType="touchUpInside" id="oMT-cU-HRA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.81176470588235294" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="WCL-lN-Qoj" secondAttribute="trailing" constant="8" id="Abf-cd-6q0"/>
+                <constraint firstItem="Dzo-4k-dhu" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="JBT-qM-wgS"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="FZZ-Mt-aTL" secondAttribute="trailing" id="JsA-ME-m1O"/>
+                <constraint firstItem="FZZ-Mt-aTL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RS3-tu-fVp"/>
+                <constraint firstItem="WCL-lN-Qoj" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="8" id="TG7-9b-u6i"/>
+                <constraint firstItem="WCL-lN-Qoj" firstAttribute="top" secondItem="FZZ-Mt-aTL" secondAttribute="bottom" id="ld7-3i-Bsh"/>
+                <constraint firstAttribute="bottom" secondItem="WCL-lN-Qoj" secondAttribute="bottom" id="oNh-CV-jst"/>
+                <constraint firstItem="Dzo-4k-dhu" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" id="vMW-w8-4A2"/>
+                <constraint firstItem="FZZ-Mt-aTL" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="van-XE-pfM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="109" y="28"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="incomeRate_bg_0" width="94" height="117"/>
+        <image name="incomeRate_bg_1" width="58" height="76"/>
+        <image name="incomeRate_bg_2" width="58" height="76"/>
+        <image name="incomeRate_bg_center" width="33" height="33"/>
+        <image name="incomeRate_bg_coin" width="14" height="14"/>
+        <image name="nav_left_white" width="18" height="21"/>
+    </resources>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KDShareBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MCh-I5-bnC">
+                    <rect key="frame" x="309" y="5" width="100" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="4tA-F3-2u5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&quot;千百收入，毫无难度&quot;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Tmw-pT-a1V">
+                    <rect key="frame" x="10" y="25" width="264" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="卡提乐期待您的加入" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hhU-3N-yYJ">
+                    <rect key="frame" x="10" y="64" width="264" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="扫码关注" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc9-2O-5FW">
+                    <rect key="frame" x="284" y="5" width="20" height="96"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="AlK-oQ-stW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Tmw-pT-a1V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="6OX-K5-bPc"/>
+                <constraint firstItem="hhU-3N-yYJ" firstAttribute="bottom" secondItem="MCh-I5-bnC" secondAttribute="bottom" constant="-20" id="Evw-b9-jWZ"/>
+                <constraint firstItem="hhU-3N-yYJ" firstAttribute="leading" secondItem="Tmw-pT-a1V" secondAttribute="leading" id="F2R-v9-FSd"/>
+                <constraint firstItem="Tmw-pT-a1V" firstAttribute="top" secondItem="MCh-I5-bnC" secondAttribute="top" constant="20" id="GyK-NG-qua"/>
+                <constraint firstItem="Fc9-2O-5FW" firstAttribute="top" secondItem="MCh-I5-bnC" secondAttribute="top" id="LEn-od-GD0"/>
+                <constraint firstItem="Fc9-2O-5FW" firstAttribute="leading" secondItem="hhU-3N-yYJ" secondAttribute="trailing" constant="10" id="Owz-8v-nfw"/>
+                <constraint firstItem="MCh-I5-bnC" firstAttribute="leading" secondItem="Fc9-2O-5FW" secondAttribute="trailing" constant="5" id="PAs-Yl-E0s"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="MCh-I5-bnC" secondAttribute="trailing" constant="5" id="V9E-KU-wGc"/>
+                <constraint firstAttribute="bottom" secondItem="MCh-I5-bnC" secondAttribute="bottom" constant="5" id="ciZ-AZ-2lP"/>
+                <constraint firstItem="Fc9-2O-5FW" firstAttribute="leading" secondItem="Tmw-pT-a1V" secondAttribute="trailing" constant="10" id="ibz-j2-weJ"/>
+                <constraint firstItem="MCh-I5-bnC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="igM-aw-rEa"/>
+                <constraint firstItem="Fc9-2O-5FW" firstAttribute="bottom" secondItem="MCh-I5-bnC" secondAttribute="bottom" id="t4i-x3-xE4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="codeImv" destination="MCh-I5-bnC" id="vYL-5T-CQI"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="-147.99107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

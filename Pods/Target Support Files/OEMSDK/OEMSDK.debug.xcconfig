@@ -1,0 +1,11 @@
+CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/OEMSDK
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../OEMSDK/Vendor" "${PODS_ROOT}/Meiqia/Meiqia-SDK-files" "${PODS_ROOT}/UMCCommon" "${PODS_ROOT}/UMCShare/UMShare" "${PODS_ROOT}/UMCShare/UMShare/UMSocialUI" $(inherited) $(PODS_ROOT)/OEMSDK
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/OEMSDK" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/BRPickerView" "${PODS_ROOT}/Headers/Public/IQKeyboardManager" "${PODS_ROOT}/Headers/Public/JAnalytics" "${PODS_ROOT}/Headers/Public/JPush" "${PODS_ROOT}/Headers/Public/JShare" "${PODS_ROOT}/Headers/Public/LYEmptyView" "${PODS_ROOT}/Headers/Public/MBProgressHUD" "${PODS_ROOT}/Headers/Public/MGJRouter" "${PODS_ROOT}/Headers/Public/MJExtension" "${PODS_ROOT}/Headers/Public/MJRefresh" "${PODS_ROOT}/Headers/Public/Masonry" "${PODS_ROOT}/Headers/Public/Meiqia" "${PODS_ROOT}/Headers/Public/OEMSDK" "${PODS_ROOT}/Headers/Public/PGDatePicker" "${PODS_ROOT}/Headers/Public/PGPickerView" "${PODS_ROOT}/Headers/Public/QMUIKit" "${PODS_ROOT}/Headers/Public/SDAutoLayout" "${PODS_ROOT}/Headers/Public/SDCycleScrollView" "${PODS_ROOT}/Headers/Public/SDWebImage" "${PODS_ROOT}/Headers/Public/SGQRCode" "${PODS_ROOT}/Headers/Public/UMCShare" "${PODS_ROOT}/Headers/Public/WMPageController" "${PODS_ROOT}/Headers/Public/iCarousel"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_ROOT = ${SRCROOT}
+PODS_TARGET_SRCROOT = ${PODS_ROOT}/../OEMSDK
+PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.${PRODUCT_NAME:rfc1034identifier}
+SKIP_INSTALL = YES
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

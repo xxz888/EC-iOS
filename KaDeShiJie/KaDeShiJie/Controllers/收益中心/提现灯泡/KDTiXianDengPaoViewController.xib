@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDTiXianDengPaoViewController">
+            <connections>
+                <outlet property="tipLbl" destination="uAf-uv-FSE" id="yWw-q5-yEQ"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8a-CX-WKP">
+                    <rect key="frame" x="22" y="144" width="370" height="37"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r9D-jT-Fcm">
+                            <rect key="frame" x="22" y="31" width="327" height="1"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="9A5-x9-h1G"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="KuA-Sd-UCL">
+                            <rect key="frame" x="0.0" y="5" width="370" height="26"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="UhF-1E-2de">
+                                    <rect key="frame" x="0.0" y="0.0" width="46.5" height="26"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="12" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="vCa-w3-Akw">
+                                    <rect key="frame" x="46.5" y="0.0" width="46" height="26"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="13" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="0nn-7L-8Fk">
+                                    <rect key="frame" x="92.5" y="0.0" width="46.5" height="26"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="14" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="2rx-hP-XFl">
+                                    <rect key="frame" x="139" y="0.0" width="46" height="26"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="15" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="Smt-u3-N8E">
+                                    <rect key="frame" x="185" y="0.0" width="46.5" height="26"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="16" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="DQg-TS-kG7">
+                                    <rect key="frame" x="231.5" y="0.0" width="46" height="26"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="17" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="5bn-v2-glj">
+                                    <rect key="frame" x="277.5" y="0.0" width="46.5" height="26"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="18" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_tixian_dengpao_nomal" translatesAutoresizingMaskIntoConstraints="NO" id="39T-3f-3nX">
+                                    <rect key="frame" x="324" y="0.0" width="46" height="26"/>
+                                </imageView>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.90980392156862744" green="0.90980392156862744" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="KuA-Sd-UCL" firstAttribute="leading" secondItem="U8a-CX-WKP" secondAttribute="leading" id="9hd-pw-F5w"/>
+                        <constraint firstItem="r9D-jT-Fcm" firstAttribute="leading" secondItem="U8a-CX-WKP" secondAttribute="leading" constant="22" id="CP5-Q0-fk6"/>
+                        <constraint firstAttribute="bottom" secondItem="r9D-jT-Fcm" secondAttribute="bottom" constant="5" id="CnG-1z-snO"/>
+                        <constraint firstAttribute="trailing" secondItem="KuA-Sd-UCL" secondAttribute="trailing" id="EOF-8J-uXz"/>
+                        <constraint firstItem="r9D-jT-Fcm" firstAttribute="top" secondItem="KuA-Sd-UCL" secondAttribute="bottom" id="Ei6-Ve-SCf"/>
+                        <constraint firstAttribute="trailing" secondItem="r9D-jT-Fcm" secondAttribute="trailing" constant="21" id="LgP-Km-AIQ"/>
+                        <constraint firstItem="KuA-Sd-UCL" firstAttribute="top" secondItem="U8a-CX-WKP" secondAttribute="top" constant="5" id="urg-7E-h9Q"/>
+                        <constraint firstAttribute="width" secondItem="U8a-CX-WKP" secondAttribute="height" multiplier="10:1" id="zmU-LC-Os1"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恭喜您已成功直推激活-人，还差-人即可提现。" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="uAf-uv-FSE">
+                    <rect key="frame" x="25" y="191" width="364" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.10980392156862745" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="uAf-uv-FSE" firstAttribute="top" secondItem="U8a-CX-WKP" secondAttribute="bottom" constant="10" id="107-Hf-4wy"/>
+                <constraint firstItem="uAf-uv-FSE" firstAttribute="trailing" secondItem="U8a-CX-WKP" secondAttribute="trailing" constant="-3" id="DGs-Us-1Uf"/>
+                <constraint firstItem="U8a-CX-WKP" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.0412946" id="IfP-hZ-FbU"/>
+                <constraint firstItem="uAf-uv-FSE" firstAttribute="leading" secondItem="U8a-CX-WKP" secondAttribute="leading" constant="3" id="Ubd-lR-bU3"/>
+                <constraint firstItem="U8a-CX-WKP" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="dGC-e4-teD"/>
+                <constraint firstItem="U8a-CX-WKP" firstAttribute="centerX" secondItem="Q5M-cg-NOt" secondAttribute="centerX" id="gIc-LE-jUc"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="12"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="86.956521739130437" y="90.401785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kd_tixian_dengpao_nomal" width="20" height="21"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

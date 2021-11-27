@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hKu-3K-TE1" customClass="MCProductView">
+            <rect key="frame" x="0.0" y="0.0" width="260" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common_pro_card_temp" translatesAutoresizingMaskIntoConstraints="NO" id="YXg-Be-uV0">
+                    <rect key="frame" x="0.0" y="0.0" width="260" height="150"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="U86-O1-UlH">
+                    <rect key="frame" x="22" y="18" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="P7h-Kk-yde"/>
+                        <constraint firstAttribute="width" constant="38" id="sNu-Vl-Oo3"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DSp-d3-ug1">
+                    <rect key="frame" x="101.5" y="64" width="57" height="22"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                    <color key="textColor" red="1" green="0.89411764709999997" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ca7-bM-vNM">
+                    <rect key="frame" x="70" y="27.5" width="40.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                    <color key="textColor" red="0.84705882352941175" green="0.84705882352941175" blue="0.84705882352941175" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您当前是" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBA-37-cwO">
+                    <rect key="frame" x="12" y="118" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                    <color key="textColor" red="1" green="0.89411764709999997" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="共个产品" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpW-er-6Om">
+                    <rect key="frame" x="190" y="118" width="58" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.84705882349999995" green="0.84705882349999995" blue="0.84705882349999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="ZpW-er-6Om" firstAttribute="centerY" secondItem="QBA-37-cwO" secondAttribute="centerY" id="0IQ-di-Tx0"/>
+                <constraint firstAttribute="bottom" secondItem="YXg-Be-uV0" secondAttribute="bottom" id="0wt-EA-E2x"/>
+                <constraint firstItem="ca7-bM-vNM" firstAttribute="leading" secondItem="U86-O1-UlH" secondAttribute="trailing" constant="10" id="A6a-EK-hOl"/>
+                <constraint firstItem="DSp-d3-ug1" firstAttribute="centerY" secondItem="hKu-3K-TE1" secondAttribute="centerY" id="Dba-LZ-vCH"/>
+                <constraint firstItem="U86-O1-UlH" firstAttribute="leading" secondItem="hKu-3K-TE1" secondAttribute="leading" constant="22" id="Din-mv-aQj"/>
+                <constraint firstAttribute="bottom" secondItem="QBA-37-cwO" secondAttribute="bottom" constant="15" id="MTX-hY-JxT"/>
+                <constraint firstItem="U86-O1-UlH" firstAttribute="top" secondItem="hKu-3K-TE1" secondAttribute="top" constant="18" id="NV8-X6-LH3"/>
+                <constraint firstAttribute="trailing" secondItem="ZpW-er-6Om" secondAttribute="trailing" constant="12" id="ODD-pe-kuF"/>
+                <constraint firstItem="QBA-37-cwO" firstAttribute="leading" secondItem="hKu-3K-TE1" secondAttribute="leading" constant="12" id="bGe-y6-Cm0"/>
+                <constraint firstItem="DSp-d3-ug1" firstAttribute="centerX" secondItem="hKu-3K-TE1" secondAttribute="centerX" id="bui-uY-8gz"/>
+                <constraint firstItem="YXg-Be-uV0" firstAttribute="top" secondItem="hKu-3K-TE1" secondAttribute="top" id="t4Y-iK-4Tz"/>
+                <constraint firstAttribute="trailing" secondItem="YXg-Be-uV0" secondAttribute="trailing" id="vfK-q6-6IT"/>
+                <constraint firstItem="YXg-Be-uV0" firstAttribute="leading" secondItem="hKu-3K-TE1" secondAttribute="leading" id="yAm-ns-VxX"/>
+                <constraint firstItem="ca7-bM-vNM" firstAttribute="centerY" secondItem="U86-O1-UlH" secondAttribute="centerY" id="zH5-9B-bcR"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImgView" destination="YXg-Be-uV0" id="fpR-M2-VER"/>
+                <outlet property="currentGradeLab" destination="QBA-37-cwO" id="Nwr-oe-zaf"/>
+                <outlet property="gradeImgView" destination="U86-O1-UlH" id="P1b-ds-iXs"/>
+                <outlet property="numLab" destination="ZpW-er-6Om" id="Cnp-nf-9XC"/>
+                <outlet property="priceLab" destination="DSp-d3-ug1" id="7PK-aI-8xj"/>
+                <outlet property="productNameLab" destination="ca7-bM-vNM" id="PgD-Ie-Qtz"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="107.8125"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_pro_card_temp" width="341" height="187"/>
+    </resources>
+</document>

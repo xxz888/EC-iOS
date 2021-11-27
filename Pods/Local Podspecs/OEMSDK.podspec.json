@@ -1,0 +1,134 @@
+{
+  "name": "OEMSDK",
+  "version": "0.0.1",
+  "summary": "项目基础库（工具和组件）",
+  "description": "mc项目基础库，在此基础上进行o单开发。",
+  "homepage": "http://baidu.cn",
+  "license": "LICENSE",
+  "authors": {
+    "agvale": "agvale@aliyun.com"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source": {
+    "git": "",
+    "tag": "0.0.1"
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "prefix_header_contents": "#import \"OEMSDK.h\"",
+  "resource_bundles": {
+    "OEMSDK": [
+      "Assets/*"
+    ]
+  },
+  "resources": [
+    "TXAuth/*.bundle",
+    "TXAuth/*.bin",
+    "TXAuth/*.ref"
+  ],
+  "vendored_frameworks": "Vendor/*.framework",
+  "libraries": [
+    "c++",
+    "z",
+    "sqlite3"
+  ],
+  "frameworks": [
+    "AVFoundation",
+    "Accelerate",
+    "AdSupport",
+    "AudioToolbox",
+    "CoreGraphics",
+    "CoreLocation",
+    "CoreMedia",
+    "CoreServices",
+    "CoreTelephony",
+    "CoreVideo",
+    "CoreVideo",
+    "ImageIO",
+    "Photos",
+    "Security",
+    "SystemConfiguration",
+    "WebKit",
+    "CoreMotion"
+  ],
+  "requires_arc": true,
+  "pod_target_xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PODS_ROOT)/OEMSDK"
+  },
+  "dependencies": {
+    "QMUIKit": [
+      "4.1.3"
+    ],
+    "Masonry": [
+      "1.1.0"
+    ],
+    "MJRefresh": [
+      "3.4.3"
+    ],
+    "AFNetworking": [
+      "4.0.1"
+    ],
+    "MBProgressHUD": [
+      "1.2.0"
+    ],
+    "SDCycleScrollView": [
+      "1.80"
+    ],
+    "MJExtension": [
+      "3.2.2"
+    ],
+    "JPush": [
+      "3.3.3"
+    ],
+    "JAnalytics": [
+      "2.1.2"
+    ],
+    "JShare": [
+      "1.9.0"
+    ],
+    "MGJRouter": [
+      "0.10.0"
+    ],
+    "IQKeyboardManager": [
+      "6.5.5"
+    ],
+    "Meiqia": [
+      "3.6.9"
+    ],
+    "UMCCommon": [
+      "7.1.0"
+    ],
+    "UMCShare/UI": [
+      "6.9.9"
+    ],
+    "UMCShare/Social/ReducedWeChat": [
+      "6.9.9"
+    ],
+    "UMCShare/Social/ReducedQQ": [
+      "6.9.9"
+    ],
+    "iCarousel": [
+      "1.8.3"
+    ],
+    "SDAutoLayout": [
+      "2.2.1"
+    ],
+    "PGDatePicker": [
+      "2.6.9"
+    ],
+    "BRPickerView": [
+      "2.6.3"
+    ],
+    "LYEmptyView": [
+      "1.3.1"
+    ],
+    "SGQRCode": [
+      "3.0.1"
+    ],
+    "WMPageController": [
+      "2.4.0"
+    ]
+  }
+}

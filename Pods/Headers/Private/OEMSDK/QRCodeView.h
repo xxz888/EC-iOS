@@ -1,0 +1,1 @@
+../../../../OEMSDK/Classes/Module/Custom/shopcollection/QRCodeView.h

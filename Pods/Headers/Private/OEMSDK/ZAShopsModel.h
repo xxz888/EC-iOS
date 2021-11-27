@@ -1,0 +1,1 @@
+../../../../OEMSDK/Classes/Module/VIPShop/Model/ZAShopsModel.h

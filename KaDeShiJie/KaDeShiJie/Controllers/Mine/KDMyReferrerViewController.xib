@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KDMyReferrerViewController">
+            <connections>
+                <outlet property="bottomPhoneLabel" destination="gww-oZ-hPS" id="zRk-4u-XrZ"/>
+                <outlet property="topPhoneLabel" destination="uUp-3h-aA0" id="tWF-AB-3XG"/>
+                <outlet property="topView" destination="cmp-0H-BYr" id="Ohf-30-tkx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_mine_referrer_top" translatesAutoresizingMaskIntoConstraints="NO" id="Ejh-1P-3Jp">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="210" id="M0w-Xh-fjd"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmp-0H-BYr">
+                    <rect key="frame" x="10" y="146" width="394" height="230"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="直接推荐人：173****3896" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUp-3h-aA0">
+                            <rect key="frame" x="118" y="49" width="158" height="18.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18.5" id="2w1-5Y-oIQ"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vyt-mI-f6c">
+                            <rect key="frame" x="0.0" y="133.5" width="394" height="1"/>
+                            <color key="backgroundColor" red="0.93725490196078431" green="0.94509803921568625" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="iDF-4q-zto"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机：173****3896" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gww-oZ-hPS">
+                            <rect key="frame" x="15" y="101.5" width="118" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="5IV-cQ-CDY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8BA-hY-Q8s">
+                            <rect key="frame" x="339" y="96.5" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="PmV-47-Et7"/>
+                                <constraint firstAttribute="width" constant="30" id="tpO-p5-rtu"/>
+                            </constraints>
+                            <state key="normal" image="kd_mine_referrer_phone"/>
+                            <connections>
+                                <action selector="clickPhoneAction:" destination="-1" eventType="touchUpInside" id="24p-Uh-3tW"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="直接推荐人是使用卡提乐的直接推荐人，他可以为您提供卡卡提乐功能使用说明，推广引导等服务，让您可以快速学会卡卡提乐的使用，并在您有推广意向时，能够引导您快速获利。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5b-6A-1Qg">
+                            <rect key="frame" x="14" y="146.5" width="366" height="71.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="uUp-3h-aA0" firstAttribute="top" secondItem="cmp-0H-BYr" secondAttribute="top" constant="49" id="9IC-8G-UoV"/>
+                        <constraint firstItem="8BA-hY-Q8s" firstAttribute="centerY" secondItem="gww-oZ-hPS" secondAttribute="centerY" id="9n3-C2-3AW"/>
+                        <constraint firstItem="vyt-mI-f6c" firstAttribute="top" secondItem="uUp-3h-aA0" secondAttribute="bottom" constant="66" id="Bq4-jt-1KP"/>
+                        <constraint firstAttribute="bottom" secondItem="g5b-6A-1Qg" secondAttribute="bottom" constant="12" id="Hax-UB-xRm"/>
+                        <constraint firstAttribute="trailing" secondItem="8BA-hY-Q8s" secondAttribute="trailing" constant="25" id="NIy-Px-xYm"/>
+                        <constraint firstItem="gww-oZ-hPS" firstAttribute="leading" secondItem="cmp-0H-BYr" secondAttribute="leading" constant="15" id="RE5-4E-6Ym"/>
+                        <constraint firstItem="vyt-mI-f6c" firstAttribute="leading" secondItem="cmp-0H-BYr" secondAttribute="leading" id="VxG-hL-NXc"/>
+                        <constraint firstItem="vyt-mI-f6c" firstAttribute="top" secondItem="gww-oZ-hPS" secondAttribute="bottom" constant="12" id="YKN-j5-ytR"/>
+                        <constraint firstItem="g5b-6A-1Qg" firstAttribute="top" secondItem="vyt-mI-f6c" secondAttribute="bottom" constant="12" id="kGp-Yy-pli"/>
+                        <constraint firstAttribute="trailing" secondItem="g5b-6A-1Qg" secondAttribute="trailing" constant="14" id="q88-lB-HNu"/>
+                        <constraint firstAttribute="trailing" secondItem="vyt-mI-f6c" secondAttribute="trailing" id="s6X-UU-bzN"/>
+                        <constraint firstAttribute="height" constant="230" id="u8H-8o-xHq"/>
+                        <constraint firstItem="uUp-3h-aA0" firstAttribute="centerX" secondItem="cmp-0H-BYr" secondAttribute="centerX" id="xoL-3a-kBg"/>
+                        <constraint firstItem="g5b-6A-1Qg" firstAttribute="leading" secondItem="cmp-0H-BYr" secondAttribute="leading" constant="14" id="yrt-sg-3jc"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_mine_referrer_head" translatesAutoresizingMaskIntoConstraints="NO" id="PzP-1Q-gbY">
+                    <rect key="frame" x="165" y="104" width="84" height="84"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_mine_referrer_bottom" translatesAutoresizingMaskIntoConstraints="NO" id="HrF-8t-9Gb">
+                    <rect key="frame" x="0.0" y="701" width="414" height="195"/>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="PzP-1Q-gbY" firstAttribute="centerY" secondItem="cmp-0H-BYr" secondAttribute="top" id="L2v-dr-vP8"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="cmp-0H-BYr" secondAttribute="trailing" constant="10" id="SwH-Oi-ue4"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="HrF-8t-9Gb" secondAttribute="trailing" id="WZ2-bD-yJn"/>
+                <constraint firstItem="Ejh-1P-3Jp" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fIG-1Z-Imm"/>
+                <constraint firstItem="cmp-0H-BYr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="146" id="g6t-qT-2eM"/>
+                <constraint firstItem="PzP-1Q-gbY" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ha5-bf-PcQ"/>
+                <constraint firstItem="Ejh-1P-3Jp" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="hew-FF-4fC"/>
+                <constraint firstItem="HrF-8t-9Gb" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="mBN-H2-Mik"/>
+                <constraint firstItem="cmp-0H-BYr" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" constant="10" id="qyi-Vw-tP9"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="trailing" secondItem="Ejh-1P-3Jp" secondAttribute="trailing" id="uB2-Do-tvC"/>
+                <constraint firstAttribute="bottom" secondItem="HrF-8t-9Gb" secondAttribute="bottom" id="vIc-bx-kkO"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kd_mine_referrer_bottom" width="375" height="195"/>
+        <image name="kd_mine_referrer_head" width="84" height="84"/>
+        <image name="kd_mine_referrer_phone" width="18" height="18.5"/>
+        <image name="kd_mine_referrer_top" width="375" height="190"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

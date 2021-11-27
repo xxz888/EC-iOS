@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="KDEarnCenterHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kd_home_top_bg" translatesAutoresizingMaskIntoConstraints="NO" id="IOi-1a-FMh">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="215" id="LYT-Ex-6JB"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p1Q-KN-O4z">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="215"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="可提现（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvK-Mg-3Kx">
+                            <rect key="frame" x="17" y="41.5" width="92" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="cqv-ab-UJM"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MvO-3M-uwY">
+                            <rect key="frame" x="17" y="69.5" width="190" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="hjR-3Q-I42"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当日收益（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Twh-1G-arE">
+                            <rect key="frame" x="17" y="142.5" width="107.5" height="18.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18.5" id="AsE-hv-y4H"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当月收益（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Stg-Og-FZo">
+                            <rect key="frame" x="207" y="142.5" width="207" height="18.5"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18.5" id="ctc-hR-zJr"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l5Q-Dd-LZE">
+                            <rect key="frame" x="17" y="169" width="40" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nx2-ph-5bG">
+                            <rect key="frame" x="207" y="169" width="40" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="6fl-gM-0cT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3r-Wq-oy6">
+                            <rect key="frame" x="207" y="80" width="58" height="24"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="0FO-4M-bUT"/>
+                                <constraint firstAttribute="width" constant="58" id="ROi-iX-Y1i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="提现">
+                                <color key="titleColor" red="0.94117647059999998" green="0.51372549020000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickWithDrawBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="HE1-oG-rG4"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R4X-Sg-SCe">
+                            <rect key="frame" x="273" y="80" width="58" height="24"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="58" id="Xra-LY-JwM"/>
+                                <constraint firstAttribute="height" constant="24" id="dbc-B7-7le"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <state key="normal" title="弥补">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="clickRemendyBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="E7g-1r-J94"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Stg-Og-FZo" firstAttribute="centerX" secondItem="p1Q-KN-O4z" secondAttribute="centerX" multiplier="1.5" id="0CY-9G-42K"/>
+                        <constraint firstItem="QvK-Mg-3Kx" firstAttribute="leading" secondItem="p1Q-KN-O4z" secondAttribute="leading" constant="17" id="55P-D1-SmX"/>
+                        <constraint firstItem="MvO-3M-uwY" firstAttribute="leading" secondItem="QvK-Mg-3Kx" secondAttribute="leading" id="7C3-JV-rI9"/>
+                        <constraint firstItem="R4X-Sg-SCe" firstAttribute="centerY" secondItem="C3r-Wq-oy6" secondAttribute="centerY" id="Cq8-AT-8QU"/>
+                        <constraint firstItem="C3r-Wq-oy6" firstAttribute="centerY" secondItem="MvO-3M-uwY" secondAttribute="centerY" id="EVV-UA-5Cb"/>
+                        <constraint firstItem="R4X-Sg-SCe" firstAttribute="leading" secondItem="C3r-Wq-oy6" secondAttribute="trailing" constant="8" id="FTP-2l-aRS"/>
+                        <constraint firstItem="C3r-Wq-oy6" firstAttribute="leading" secondItem="MvO-3M-uwY" secondAttribute="trailing" id="Fsm-g9-PL2"/>
+                        <constraint firstItem="R4X-Sg-SCe" firstAttribute="centerY" secondItem="MvO-3M-uwY" secondAttribute="centerY" id="ITg-yh-Qaj"/>
+                        <constraint firstItem="Nx2-ph-5bG" firstAttribute="top" secondItem="Stg-Og-FZo" secondAttribute="bottom" constant="8" id="JDx-wJ-Gkg"/>
+                        <constraint firstItem="l5Q-Dd-LZE" firstAttribute="leading" secondItem="Twh-1G-arE" secondAttribute="leading" id="WnB-5H-TiJ"/>
+                        <constraint firstItem="Twh-1G-arE" firstAttribute="leading" secondItem="MvO-3M-uwY" secondAttribute="leading" id="ZYr-lP-LPG"/>
+                        <constraint firstItem="l5Q-Dd-LZE" firstAttribute="top" secondItem="Twh-1G-arE" secondAttribute="bottom" constant="8" id="dtl-dk-yMA"/>
+                        <constraint firstItem="Stg-Og-FZo" firstAttribute="centerY" secondItem="Twh-1G-arE" secondAttribute="centerY" id="fH1-1l-XFx"/>
+                        <constraint firstAttribute="bottom" secondItem="QvK-Mg-3Kx" secondAttribute="bottom" constant="152.5" id="fJB-cF-r58"/>
+                        <constraint firstAttribute="height" constant="215" id="gfe-du-nXl"/>
+                        <constraint firstItem="Nx2-ph-5bG" firstAttribute="leading" secondItem="Stg-Og-FZo" secondAttribute="leading" id="lMB-7b-Hf0"/>
+                        <constraint firstItem="Stg-Og-FZo" firstAttribute="leading" secondItem="C3r-Wq-oy6" secondAttribute="leading" id="m52-LZ-sur"/>
+                        <constraint firstItem="MvO-3M-uwY" firstAttribute="top" secondItem="QvK-Mg-3Kx" secondAttribute="bottom" constant="7" id="qym-dR-OyG"/>
+                        <constraint firstItem="Twh-1G-arE" firstAttribute="top" secondItem="MvO-3M-uwY" secondAttribute="bottom" constant="28" id="vh1-xy-gyh"/>
+                        <constraint firstItem="MvO-3M-uwY" firstAttribute="trailing" secondItem="p1Q-KN-O4z" secondAttribute="centerX" id="vj2-dd-6d8"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lzm-bU-Jna" customClass="QMUIButton">
+                    <rect key="frame" x="10" y="241" width="75.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="收益类型" image="kd_earn_center">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="UEW-GB-h6K">
+                    <rect key="frame" x="0.0" y="277" width="414" height="121"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uba-MR-8ch">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="45.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l47-Ne-YVk" customClass="QMUIButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZIt-bf-8Yu"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsE-i7-f5o" customClass="QMUIButton">
+                                    <rect key="frame" x="103.5" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="MKz-ES-rwQ"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aTB-Rk-Zce" customClass="QMUIButton">
+                                    <rect key="frame" x="207" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="pOj-P9-KZe"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5HQ-so-ndb" customClass="QMUIButton">
+                                    <rect key="frame" x="310.5" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="J5H-WT-sRm"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="jLA-sJ-eaE">
+                            <rect key="frame" x="0.0" y="75.5" width="414" height="45.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUC-t9-2Jn" customClass="QMUIButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="OUp-wC-W9c"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijA-G6-1NQ" customClass="QMUIButton">
+                                    <rect key="frame" x="103.5" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Krj-Xl-FMz"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JR6-lg-srJ" customClass="QMUIButton">
+                                    <rect key="frame" x="207" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="S3v-8K-wxg"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I58-qn-6qx" customClass="QMUIButton">
+                                    <rect key="frame" x="310.5" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Dph-cQ-1Et"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="121" id="uHr-iW-9pf"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y7B-no-kUD" customClass="QMUIButton">
+                    <rect key="frame" x="10" y="438" width="46.5" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="其他" image="kd_earn_center">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="hZP-It-WLz">
+                    <rect key="frame" x="0.0" y="474" width="414" height="45.5"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="J4P-Wb-eiM">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="45.5"/>
+                            <subviews>
+                                <button opaque="NO" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0g-Hw-HWa" customClass="QMUIButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ISh-qg-XN7"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNp-nX-8fO" customClass="QMUIButton">
+                                    <rect key="frame" x="103.5" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="iD9-96-64V"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ry8-0W-JwZ" customClass="QMUIButton">
+                                    <rect key="frame" x="207" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="ie8-P9-4KE"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sZW-PH-ZiN" customClass="QMUIButton">
+                                    <rect key="frame" x="310.5" y="0.0" width="103.5" height="45.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                    <state key="normal" title="Button">
+                                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="btnAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="33f-Zh-MR3"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45.5" id="7uM-QL-F6i"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="p1Q-KN-O4z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0Cb-if-ag3"/>
+                <constraint firstItem="y7B-no-kUD" firstAttribute="top" secondItem="UEW-GB-h6K" secondAttribute="bottom" constant="40" id="0lL-2j-pqS"/>
+                <constraint firstItem="hZP-It-WLz" firstAttribute="top" secondItem="y7B-no-kUD" secondAttribute="bottom" constant="19" id="5FT-RM-JKs"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IOi-1a-FMh" secondAttribute="trailing" id="B0U-SF-GIu"/>
+                <constraint firstItem="IOi-1a-FMh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Hue-5B-Rwo"/>
+                <constraint firstItem="UEW-GB-h6K" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Jz4-2O-x6W"/>
+                <constraint firstItem="UEW-GB-h6K" firstAttribute="top" secondItem="Lzm-bU-Jna" secondAttribute="bottom" constant="19" id="Kf3-P0-2wy"/>
+                <constraint firstItem="p1Q-KN-O4z" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SNf-jf-igP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UEW-GB-h6K" secondAttribute="trailing" id="VQG-Tz-NvM"/>
+                <constraint firstItem="y7B-no-kUD" firstAttribute="leading" secondItem="Lzm-bU-Jna" secondAttribute="leading" id="as4-mW-9D3"/>
+                <constraint firstItem="IOi-1a-FMh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="b2Z-Uf-Onj"/>
+                <constraint firstItem="Lzm-bU-Jna" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="hgw-Oj-eBH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="p1Q-KN-O4z" secondAttribute="trailing" id="iV1-Hp-By0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hZP-It-WLz" secondAttribute="trailing" id="kAI-0W-0oR"/>
+                <constraint firstItem="hZP-It-WLz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="sAf-tB-X6G"/>
+                <constraint firstItem="Lzm-bU-Jna" firstAttribute="top" secondItem="p1Q-KN-O4z" secondAttribute="bottom" constant="26" id="zkR-Ad-4oH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="balanceView" destination="MvO-3M-uwY" id="yoT-2D-iie"/>
+                <outlet property="bottomView" destination="hZP-It-WLz" id="Tj7-U0-eN0"/>
+                <outlet property="centerView" destination="UEW-GB-h6K" id="FSU-mK-MKw"/>
+                <outlet property="mibuBtn" destination="R4X-Sg-SCe" id="CRx-QQ-j9k"/>
+                <outlet property="monthEarnView" destination="Nx2-ph-5bG" id="Gkm-3p-eOh"/>
+                <outlet property="todayEarnView" destination="l5Q-Dd-LZE" id="eh4-e4-00n"/>
+                <outlet property="topView" destination="p1Q-KN-O4z" id="wRQ-7O-mXr"/>
+                <outlet property="withDrewBtn" destination="C3r-Wq-oy6" id="FlO-m4-OP4"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="kd_earn_center" width="17.5" height="10.5"/>
+        <image name="kd_home_top_bg" width="375" height="245"/>
+    </resources>
+</document>

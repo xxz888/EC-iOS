@@ -1,0 +1,1 @@
+../../../../OEMSDK/Classes/Base/App/QMUIConfigurationTemplate.h

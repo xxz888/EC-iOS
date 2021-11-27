@@ -1,0 +1,116 @@
+{
+  "images" : [
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneNotification_20pt@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneNotification_20pt@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneSpootlight5_29pt@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneSpootlight5_29pt@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneSpootlight7_40pt@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneSpootlight7_40pt@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneApp_60pt@2x.png",
+      "idiom" : "iphone",
+      "scale" : "2x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPhoneApp_60pt@3x.png",
+      "idiom" : "iphone",
+      "scale" : "3x",
+      "size" : "60x60"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadNotifications_20pt.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadNotifications_20pt@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "20x20"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadSpootlight5_29pt.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadSpootlight5_29pt@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "29x29"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadSpootlight7_40pt.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadSpootlight7_40pt@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "40x40"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadApp_76pt.png",
+      "idiom" : "ipad",
+      "scale" : "1x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadApp_76pt@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "76x76"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadProApp_83.5pt@2x.png",
+      "idiom" : "ipad",
+      "scale" : "2x",
+      "size" : "83.5x83.5"
+    },
+    {
+      "filename" : "6ab4e8634e908cfb81488bb4db94e6b8iPadProApp_83.5pt@2x-1.png",
+      "idiom" : "ios-marketing",
+      "scale" : "1x",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

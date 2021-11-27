@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="VpG-bt-2L8" customClass="MCPosterHeader">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tLR-SH-ui3">
+                    <rect key="frame" x="30" y="764" width="354" height="78"/>
+                    <subviews>
+                        <stackView opaque="NO" tag="1000" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Z6p-W9-wlw">
+                            <rect key="frame" x="0.0" y="0.0" width="88.5" height="78"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mc_share_wechat" translatesAutoresizingMaskIntoConstraints="NO" id="3zW-fh-Ky7">
+                                    <rect key="frame" x="19.5" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="3zW-fh-Ky7" secondAttribute="height" multiplier="1:1" id="LSi-nb-ijZ"/>
+                                        <constraint firstAttribute="width" constant="50" id="sWe-My-9ty"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnN-Im-A9n">
+                                    <rect key="frame" x="29" y="60" width="31" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" tag="1001" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="o21-4C-Fzf">
+                            <rect key="frame" x="88.5" y="0.0" width="88.5" height="78"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mc_share_timeline" translatesAutoresizingMaskIntoConstraints="NO" id="nup-up-4A2">
+                                    <rect key="frame" x="19.5" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="nup-up-4A2" secondAttribute="height" multiplier="1:1" id="BDX-aN-t5t"/>
+                                        <constraint firstAttribute="width" constant="50" id="mwa-QY-156"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7qe-9p-DFE">
+                                    <rect key="frame" x="21.5" y="60" width="46" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" tag="1002" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Em3-YT-Umz">
+                            <rect key="frame" x="177" y="0.0" width="88.5" height="78"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mc_share_qq" translatesAutoresizingMaskIntoConstraints="NO" id="TuP-8e-T7z">
+                                    <rect key="frame" x="19.5" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="A0i-VQ-mPS"/>
+                                        <constraint firstAttribute="width" secondItem="TuP-8e-T7z" secondAttribute="height" multiplier="1:1" id="WWt-mf-oOV"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWT-jA-hTC">
+                                    <rect key="frame" x="33" y="60" width="23" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" tag="1003" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0dd-ZV-7x4">
+                            <rect key="frame" x="265.5" y="0.0" width="88.5" height="78"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mc_share_albulm" translatesAutoresizingMaskIntoConstraints="NO" id="i4D-CX-yje">
+                                    <rect key="frame" x="19.5" y="0.0" width="50" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="50" id="T5Q-lP-pbC"/>
+                                        <constraint firstAttribute="width" secondItem="i4D-CX-yje" secondAttribute="height" multiplier="1:1" id="bDZ-84-nnj"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存图片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Beg-5N-jSj">
+                                    <rect key="frame" x="13.5" y="60" width="61.5" height="18"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                    <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OwJ-SZ-mZg">
+                    <rect key="frame" x="30" y="734.5" width="116" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Zsy-mJ-HIh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NcU-GY-Vle">
+                    <rect key="frame" x="268" y="734.5" width="126" height="1"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="oIL-R3-NSb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRe-EN-IBS" customClass="iCarousel">
+                    <rect key="frame" x="50" y="49" width="314" height="647"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邀好友得收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ny3-Fc-8xB">
+                    <rect key="frame" x="161" y="726" width="92" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <color key="highlightedColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NcU-GY-Vle" secondAttribute="trailing" constant="20" id="1f0-AC-lX7"/>
+                <constraint firstItem="NcU-GY-Vle" firstAttribute="centerY" secondItem="ny3-Fc-8xB" secondAttribute="centerY" id="3e5-Ek-hky"/>
+                <constraint firstItem="ny3-Fc-8xB" firstAttribute="leading" secondItem="OwJ-SZ-mZg" secondAttribute="trailing" constant="15" id="7g4-ee-4VH"/>
+                <constraint firstItem="tLR-SH-ui3" firstAttribute="top" secondItem="ny3-Fc-8xB" secondAttribute="bottom" constant="20" id="860-OF-DW3"/>
+                <constraint firstItem="OwJ-SZ-mZg" firstAttribute="leading" secondItem="VpG-bt-2L8" secondAttribute="leading" constant="30" id="9KU-UN-F60"/>
+                <constraint firstItem="sRe-EN-IBS" firstAttribute="top" secondItem="hjc-Ah-VRj" secondAttribute="top" constant="5" id="Ey2-8a-KoU"/>
+                <constraint firstItem="hjc-Ah-VRj" firstAttribute="bottom" secondItem="tLR-SH-ui3" secondAttribute="bottom" constant="20" id="MjL-ZE-RDf"/>
+                <constraint firstItem="ny3-Fc-8xB" firstAttribute="centerY" secondItem="OwJ-SZ-mZg" secondAttribute="centerY" id="Z5a-ar-YFu"/>
+                <constraint firstItem="ny3-Fc-8xB" firstAttribute="centerX" secondItem="VpG-bt-2L8" secondAttribute="centerX" id="a4k-fL-cA2"/>
+                <constraint firstItem="NcU-GY-Vle" firstAttribute="leading" secondItem="ny3-Fc-8xB" secondAttribute="trailing" constant="15" id="aAj-G2-Se3"/>
+                <constraint firstItem="hjc-Ah-VRj" firstAttribute="trailing" secondItem="tLR-SH-ui3" secondAttribute="trailing" constant="30" id="hHP-A4-4z1"/>
+                <constraint firstItem="sRe-EN-IBS" firstAttribute="leading" secondItem="hjc-Ah-VRj" secondAttribute="leading" constant="50" id="nmp-te-Uj0"/>
+                <constraint firstItem="ny3-Fc-8xB" firstAttribute="top" secondItem="sRe-EN-IBS" secondAttribute="bottom" constant="30" id="pqJ-z9-C2y"/>
+                <constraint firstItem="hjc-Ah-VRj" firstAttribute="trailing" secondItem="sRe-EN-IBS" secondAttribute="trailing" constant="50" id="qfx-KU-gEA"/>
+                <constraint firstItem="tLR-SH-ui3" firstAttribute="leading" secondItem="hjc-Ah-VRj" secondAttribute="leading" constant="30" id="zGN-yA-t2C"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="hjc-Ah-VRj"/>
+            <connections>
+                <outlet property="pageView" destination="sRe-EN-IBS" id="B94-pl-VES"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="132.58928571428572"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mc_share_albulm" width="75" height="75"/>
+        <image name="mc_share_qq" width="75" height="75"/>
+        <image name="mc_share_timeline" width="75" height="75"/>
+        <image name="mc_share_wechat" width="75" height="75"/>
+    </resources>
+</document>

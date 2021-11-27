@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MCFenrunCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ws_shouyimingxi" translatesAutoresizingMaskIntoConstraints="NO" id="AVN-gP-4Mj">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="umP-Fd-8bB">
+                        <rect key="frame" x="15" y="28" width="41" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n2e-xJ-njl">
+                                <rect key="frame" x="0.0" y="0.0" width="41" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01-01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ya-rC-sHu">
+                                <rect key="frame" x="2" y="27" width="37" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRo-PP-8FS" customClass="QMUILabel">
+                        <rect key="frame" x="120" y="75.5" width="61.5" height="14.5"/>
+                        <attributedString key="attributedText">
+                            <fragment content="手机归属地">
+                                <attributes>
+                                    <color key="NSColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <font key="NSFont" metaFont="cellTitle"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ws_fangdajing" translatesAutoresizingMaskIntoConstraints="NO" id="qMb-pc-YbK">
+                        <rect key="frame" x="80" y="12.5" width="57" height="72.5"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="城市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GkN-Tu-gvO">
+                        <rect key="frame" x="94" y="32" width="29" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="p9e-j4-hew">
+                        <rect key="frame" x="177" y="27" width="135" height="46"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LFF-1i-jHr">
+                                <rect key="frame" x="0.0" y="0.0" width="57.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="来自尾号0000的收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsE-kF-PeX">
+                                <rect key="frame" x="0.0" y="29" width="135" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="p9e-j4-hew" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="729-xD-z4N"/>
+                    <constraint firstItem="qMb-pc-YbK" firstAttribute="top" secondItem="GkN-Tu-gvO" secondAttribute="bottom" constant="-36.5" id="Bbx-CB-84D"/>
+                    <constraint firstAttribute="trailing" secondItem="AVN-gP-4Mj" secondAttribute="trailing" id="Gcv-qV-Vca"/>
+                    <constraint firstAttribute="bottom" secondItem="AVN-gP-4Mj" secondAttribute="bottom" id="Iph-3F-AUm"/>
+                    <constraint firstItem="vRo-PP-8FS" firstAttribute="leading" secondItem="qMb-pc-YbK" secondAttribute="leading" constant="40" id="NHf-yL-Z8d"/>
+                    <constraint firstItem="umP-Fd-8bB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Qid-oP-QRf"/>
+                    <constraint firstItem="vRo-PP-8FS" firstAttribute="bottom" secondItem="qMb-pc-YbK" secondAttribute="bottom" constant="5" id="Ywc-bt-evb"/>
+                    <constraint firstItem="AVN-gP-4Mj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="bPu-Zc-qQ9"/>
+                    <constraint firstItem="umP-Fd-8bB" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="cnU-ft-Rwn"/>
+                    <constraint firstItem="AVN-gP-4Mj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="lEf-9q-iVG"/>
+                    <constraint firstItem="qMb-pc-YbK" firstAttribute="leading" secondItem="umP-Fd-8bB" secondAttribute="trailing" constant="24" id="mQD-AT-zXJ"/>
+                    <constraint firstAttribute="bottom" secondItem="qMb-pc-YbK" secondAttribute="bottom" constant="15" id="tdF-SQ-HXK"/>
+                    <constraint firstAttribute="trailing" secondItem="p9e-j4-hew" secondAttribute="trailing" constant="8" id="xJO-yP-IAD"/>
+                    <constraint firstItem="GkN-Tu-gvO" firstAttribute="centerX" secondItem="qMb-pc-YbK" secondAttribute="centerX" id="yrl-mv-e6O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="cityLab" destination="GkN-Tu-gvO" id="lo5-J5-SY8"/>
+                <outlet property="moneyLab" destination="LFF-1i-jHr" id="gaa-F0-qUO"/>
+                <outlet property="monthLab" destination="3Ya-rC-sHu" id="wAC-J4-tDq"/>
+                <outlet property="monthZHLab" destination="n2e-xJ-njl" id="GsQ-AH-IRU"/>
+                <outlet property="phoneTypeLab" destination="vRo-PP-8FS" id="X5j-1a-DPL"/>
+                <outlet property="remarkLab" destination="hsE-kF-PeX" id="ah8-ZG-IJC"/>
+            </connections>
+            <point key="canvasLocation" x="133" y="153"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ws_fangdajing" width="57" height="72.5"/>
+        <image name="ws_shouyimingxi" width="375" height="94"/>
+    </resources>
+</document>

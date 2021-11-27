@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="wx" rowHeight="373" id="KGk-i7-Jjw" customClass="KDWXViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="373"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="373"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dm1-iG-FNt">
+                        <rect key="frame" x="16.5" y="10" width="287" height="363"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还款加（1）群" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d53-9T-o9P">
+                        <rect key="frame" x="53.5" y="25" width="111.5" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="7kz-5X-Sqd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ls3-LI-Tpv" customClass="QMUIButton">
+                        <rect key="frame" x="238" y="25" width="53" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="保存" image="kd_wx_save">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="spacingBetweenImageAndTitle">
+                                <real key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="saveImgAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Yx1-Xt-SfF"/>
+                        </connections>
+                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pxr-JA-AH9">
+                        <rect key="frame" x="53.5" y="70" width="240" height="240"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="240" id="Gtb-CV-VOq"/>
+                            <constraint firstAttribute="width" constant="240" id="fxA-sm-oGN"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存二维码，加我微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k7U-wo-2pp">
+                        <rect key="frame" x="88.5" y="333" width="143" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="d53-9T-o9P" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="53.5" id="4W4-zD-RbB"/>
+                    <constraint firstItem="Dm1-iG-FNt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Kd7-CE-361"/>
+                    <constraint firstAttribute="bottom" secondItem="Dm1-iG-FNt" secondAttribute="bottom" id="Koq-Km-mw2"/>
+                    <constraint firstItem="Pxr-JA-AH9" firstAttribute="leading" secondItem="d53-9T-o9P" secondAttribute="leading" id="Lxr-wX-MP2"/>
+                    <constraint firstItem="Pxr-JA-AH9" firstAttribute="top" secondItem="d53-9T-o9P" secondAttribute="bottom" constant="21" id="R3h-ds-xb8"/>
+                    <constraint firstItem="d53-9T-o9P" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="SPD-Re-N1p"/>
+                    <constraint firstAttribute="right" secondItem="Dm1-iG-FNt" secondAttribute="right" constant="16.5" id="TlB-Qj-mjj"/>
+                    <constraint firstAttribute="trailing" secondItem="Ls3-LI-Tpv" secondAttribute="trailing" constant="29" id="a4Z-CT-Ahm"/>
+                    <constraint firstItem="Ls3-LI-Tpv" firstAttribute="centerY" secondItem="d53-9T-o9P" secondAttribute="centerY" id="gql-Vw-TAY"/>
+                    <constraint firstItem="k7U-wo-2pp" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="iaz-Jo-gyM"/>
+                    <constraint firstItem="Dm1-iG-FNt" firstAttribute="left" secondItem="H2p-sc-9uM" secondAttribute="left" constant="16.5" id="xJ9-88-5ss"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="k7U-wo-2pp" secondAttribute="bottom" constant="12" id="zbV-NG-oj5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="bgView" destination="Dm1-iG-FNt" id="EBn-cv-I2o"/>
+                <outlet property="imgView" destination="Pxr-JA-AH9" id="ylF-De-Mmk"/>
+                <outlet property="nameLabel" destination="d53-9T-o9P" id="cve-9M-uhq"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kd_wx_save" width="24" height="24"/>
+    </resources>
+</document>

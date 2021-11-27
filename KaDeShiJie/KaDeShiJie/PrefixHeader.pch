@@ -1,0 +1,48 @@
+//
+//  PrefixHeader.pch
+//  Sukakongjian_157
+//
+//  Created by SS001 on 2020/9/1.
+//  Copyright © 2020 SS001. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define STF(string) [NSString stringWithFormat:@"%.2f", string]
+#define STR(string) [NSString stringWithFormat:@"%@", string]
+#define WS_ScaleRateX    [[UIScreen mainScreen] bounds].size.height/667.f
+#define WS_ScaleRate      (LY_iPhoneX ? 1.2 : (SCREEN_HEIGHT/667.f))
+
+/*适配比例*/
+#define Ratio(w)                ([UIScreen mainScreen].bounds.size.width/375)*w
+
+#import <OEMSDK.h>
+#import <MCTeamModel.h>
+#import <MCFeilvModel.h>
+#import <QSHHistoryListController.h>
+#import <MCDateStore.h>
+#import <MCTXManager.h>
+#import <MCShareManyNavigateController.h>
+#import <LoginAndRegistHTTPTools.h>
+#import <BRPickerView.h>
+#import <MCWithdrawController.h>
+#import <MCCardManagerController.h>
+#import <MCApp.h>
+#import <MCChooseCardModel.h>
+#import <MCNewsModel.h>
+#import <MCBankStore.h>
+#import <MJExtension.h>
+#import <MCBankCardModel.h>
+#import <MCChannelModel.h>
+#import <WBQRCodeVC.h>
+#import <MCPayPWDInputView.h>
+#import "UILabel+MCFontSize.h"
+#import "UIFont+MCFontSize.h"
+#import "UIDevice+DeviceIDByKeychainThisDeviceOnly.h"
+#import "KDFillButton.h"
+#import "KDGuidePageManager.h"
+#import <ZZCircleProgress.h>
+#import <KDLoginTool.h>
+#import "KDWebContainer.h"
+#endif /* PrefixHeader_pch */

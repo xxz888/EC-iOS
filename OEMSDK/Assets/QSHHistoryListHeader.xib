@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gwO-cM-559" customClass="QSHHistoryListHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tc-78-H2F">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="113"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-vQ-dCl">
+                            <rect key="frame" x="155" y="32" width="65.5" height="49"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="累计收益" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFd-Da-evT">
+                                    <rect key="frame" x="0.0" y="0.0" width="65.5" height="19.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af9-DU-jbV">
+                                    <rect key="frame" x="27" y="27.5" width="11.5" height="21.5"/>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                    <color key="textColor" red="0.96862745100000003" green="0.30980392159999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" id="0K2-Fv-8va"/>
+                        <constraint firstItem="4cF-vQ-dCl" firstAttribute="centerX" secondItem="2tc-78-H2F" secondAttribute="centerX" id="A5g-ry-Owg"/>
+                        <constraint firstItem="4cF-vQ-dCl" firstAttribute="centerY" secondItem="2tc-78-H2F" secondAttribute="centerY" id="sld-QM-2hc"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4B-Cl-WU6">
+                    <rect key="frame" x="0.0" y="113" width="375" height="37"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="月份" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KYY-Dy-oJc">
+                            <rect key="frame" x="40" y="8.5" width="35" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收益（元）" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ISD-a4-dXG">
+                            <rect key="frame" x="273" y="8.5" width="87" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="KYY-Dy-oJc" firstAttribute="leading" secondItem="D4B-Cl-WU6" secondAttribute="leading" constant="40" id="OPI-Ry-EaM"/>
+                        <constraint firstItem="KYY-Dy-oJc" firstAttribute="centerY" secondItem="D4B-Cl-WU6" secondAttribute="centerY" id="PVd-92-8Yh"/>
+                        <constraint firstItem="ISD-a4-dXG" firstAttribute="centerY" secondItem="D4B-Cl-WU6" secondAttribute="centerY" id="liv-YN-cbw"/>
+                        <constraint firstAttribute="trailing" secondItem="ISD-a4-dXG" secondAttribute="trailing" constant="15" id="uBx-zN-Fbv"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D4B-Cl-WU6" firstAttribute="leading" secondItem="gwO-cM-559" secondAttribute="leading" id="1PL-Np-xHu"/>
+                <constraint firstAttribute="bottom" secondItem="D4B-Cl-WU6" secondAttribute="bottom" id="6cA-k4-xzu"/>
+                <constraint firstItem="2tc-78-H2F" firstAttribute="leading" secondItem="gwO-cM-559" secondAttribute="leading" id="LfG-zF-sVc"/>
+                <constraint firstItem="2tc-78-H2F" firstAttribute="top" secondItem="gwO-cM-559" secondAttribute="top" id="ZYn-Y9-cgq"/>
+                <constraint firstAttribute="trailing" secondItem="2tc-78-H2F" secondAttribute="trailing" id="aeO-1q-2iy"/>
+                <constraint firstItem="D4B-Cl-WU6" firstAttribute="top" secondItem="2tc-78-H2F" secondAttribute="bottom" id="dIx-dN-9yO"/>
+                <constraint firstAttribute="trailing" secondItem="D4B-Cl-WU6" secondAttribute="trailing" id="wEO-JN-5S8"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="totalProfit" destination="af9-DU-jbV" id="mF1-Ir-Svb"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="149.32533733133434"/>
+        </view>
+    </objects>
+</document>
